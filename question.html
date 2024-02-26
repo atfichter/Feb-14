@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'll be sad if you say no</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <link rel="icon" type="image/png" href="heart.png">
+</head>
+
+<body>
+    <h1 class="font-effect-fire">Will you be my Valentime?</h1>  
+    <img src="heart.png" alt="Heart" class="logo">
+    <button id="replaceContentButton" class="button">Yes</button>
+    <button id="button2" class="button" onclick="increaseSize('replaceContentButton')">No</button>
+    <script>
+    function increaseSize(buttonId) {
+            var button = document.getElementById(buttonId);
+            var currentSize = parseInt(window.getComputedStyle(button, null).getPropertyValue('font-size'));
+            button.style.fontSize = (currentSize + 10) + 'px'; // Increase font size by 1px
+            var currentPadding = button.style.padding.split('px').map(Number); // Convert padding string to numbers
+            button.style.padding = (currentPadding[0] + 1) + 'px ' + (currentPadding[1] + 2) + 'px'; // Increase padding
+        }
+    </script>
+
+    <script>
+        document.getElementById('replaceContentButton').onclick = function() {
+            document.body.innerHTML = '<h1>My Number is 240-360-7035 :)</h1>';
+        };
+    </script>
+
+</body>
+
+</html>

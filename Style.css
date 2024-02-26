@@ -1,0 +1,20 @@
+body {
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
+    background-color: pink;
+    background-image: url(sean-unsplash.jpg);
+    background-size: 20% 80%; /* Try cover, auto auto */
+    background-repeat: no-repeat; /* Try repeat-y, no-repeat, repeat */
+    background-attachment: fixed; /* Try scroll */
+    background-position: center;
+  }
+
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.logo {
+  width: 10rem;
+}
